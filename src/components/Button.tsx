@@ -1,0 +1,10 @@
+import styled from "styled-components";
+
+export const Button = styled.button`
+background-color: rgb(117, 98, 224);
+color: white;
+  width: 150px;
+  height: 50px;
+// border-radius: 5%;
+// border: 1px solid rgb(117, 98, 224)
+`

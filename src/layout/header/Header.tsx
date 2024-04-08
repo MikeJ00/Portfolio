@@ -5,11 +5,12 @@ import {Menu} from "../../components/menu/Menu";
 import {Main} from "../../layout/section/main/Main";
 import {Skills} from "../../layout/section/skills/Skills";
 
+const items = ['Home', 'Skills', 'Projects', 'Contacts']
 export const Header = () => {
     return (
         <StyledHeader>
            <Logo/>
-           <Menu/>
+           <Menu menuItems={items}/>
         </StyledHeader>
     );
 };

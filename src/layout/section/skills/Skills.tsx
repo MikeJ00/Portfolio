@@ -8,7 +8,7 @@ import {Skill} from "../../../layout/section/skills/skill/Skill";
 export const Skills = () => {
   return (
     <StyledSkills>
-      <SectionTitle>My Skills</SectionTitle>
+      <SectionTitle>Skills</SectionTitle>
       <FlexContainer wrap={"wrap"} justify={"space-between"}>
         <Skill iconId={"html_logo"}
                skillTitle={"Html"}
