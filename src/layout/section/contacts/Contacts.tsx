@@ -3,6 +3,10 @@ import styled from "styled-components";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Logo} from "../../../components/logo/Logo";
 import {Button} from "../../../components/Button";
+import gmail from "../../../assets/images/gmail.png"
+import telegram from "../../../assets/images/telegram.png"
+import githubWhite from "../../../assets/images/gihubWhite.png"
+import linkedIn from "../../../assets/images/linkedIn.png"
 
 export const Contacts = () => {
   return (
@@ -12,7 +16,10 @@ export const Contacts = () => {
           <ConnectText>Connect with me:</ConnectText>
           <MainTitle>Satisfied with me?
             Please contact me</MainTitle>
-          <Logo/>
+          <Image src={telegram}/>
+          <Image src={githubWhite}/>
+          <Image src={gmail}/>
+          <Image src={linkedIn}/>
         </StyledText>
         <StyledContacts>
           <ContactTable>
@@ -32,6 +39,12 @@ export const Contacts = () => {
 
   );
 };
+const Image = styled.img`
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  opacity: 50%;
+`
 const MainStyledContacts = styled.div`
   background-color: #1A1A29;
   min-height: 100vh;

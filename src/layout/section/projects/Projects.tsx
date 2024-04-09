@@ -3,6 +3,9 @@ import styled from "styled-components";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Project} from "../projects/project/Project";
 import example_project from '../../../assets/images/example_project.svg'
+import socialNetwork from '../../../../src/assets/images/socialNetwork.jpg'
+import todo from '../../../../src/assets/images/todolist.jpg'
+import cards from '../../../../src/assets/images/cards.jpg'
 
 export const Projects = () => {
   return (
@@ -17,13 +20,13 @@ export const Projects = () => {
       <FlexContainer justify={"space-around"}>
         <Project projectTitle={"Social Network"}
                  projectText={"A live Geolocation app for finding tweets and twitter users around you."}
-                 src={example_project}/>
-        <Project projectTitle={"Counter"}
+                 src={socialNetwork}/>
+        <Project projectTitle={"Todolist"}
                  projectText={"A video streaming app with live Geolocation, for streaming events."}
-                 src={example_project}/>
-        <Project projectTitle={"Counter"}
+                 src={todo}/>
+        <Project projectTitle={"Cards"}
                  projectText={"A video streaming app with live Geolocation, for streaming events."}
-                 src={example_project}/>
+                 src={cards}/>
       </FlexContainer>
     </StyledProjects>
   );

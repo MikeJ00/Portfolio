@@ -22,7 +22,7 @@ export const Project = (props:ProjectType) => {
       <StyledText>
         {props.projectText}
       </StyledText>
-      <StyledButton href={"#"}>View Live</StyledButton>
+      <StyledButton href={"#"}>View Live </StyledButton>
       <StyledButton href={"#"}>Github Repo</StyledButton>
     </StyledProject>
   );
@@ -36,6 +36,7 @@ const Image = styled.img`
   width: 100%;
   height: 172px;
   object-fit: cover;
+  opacity: 50%;
 `
 const TitleProject = styled.h3`
 color: rgb(117, 98, 224);
@@ -45,4 +46,5 @@ const StyledText = styled.p`
 color: white`
 
 const StyledButton = styled.a`
+  text-decoration: none;
 `

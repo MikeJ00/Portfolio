@@ -5,6 +5,7 @@ import React from "react";
 import {Skills} from "../src/layout/section/skills/Skills";
 import {Projects} from "../src/layout/section/projects/Projects";
 import {Contacts} from "../src/layout/section/contacts/Contacts";
+import {Footer} from "../src/layout/footer/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Contacts/>
+      <Footer/>
     </div>
   );
 }

@@ -9,7 +9,7 @@ const items = ['Home', 'Skills', 'Projects', 'Contacts']
 export const Header = () => {
     return (
         <StyledHeader>
-           <Logo/>
+          <MainName>Mike Berasneu</MainName>
            <Menu menuItems={items}/>
         </StyledHeader>
     );
@@ -19,4 +19,8 @@ const StyledHeader = styled.header
 background-color: #181824;
   display: flex;
   justify-content: space-between;
+`
+const MainName = styled.h3`
+  color: rgb(117, 98, 224);
+  padding: 0 0 0 70px;
 `
