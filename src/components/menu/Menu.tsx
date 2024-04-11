@@ -19,8 +19,8 @@ export const Menu = (props: MenuType) => {
 };
 
 const StyledMenu = styled.nav`
-  margin-right: 160px;
-  font-weight: bolder;
+  //margin-right: 160px;
+  //font-weight: bolder;
   ul {
     display: flex;
     gap: 30px;

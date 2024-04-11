@@ -46,11 +46,11 @@ const Image = styled.img`
   opacity: 50%;
 `
 const MainStyledContacts = styled.div`
-  background-color: #1A1A29;
-  min-height: 100vh;
+  //background-color: #1A1A29;
+  //min-height: 100vh;
 `
 const StyledContacts = styled.div`
-  background-color: #1A1A29;
+  //background-color: #1A1A29;
   
 `
 const StyledText = styled.div`
