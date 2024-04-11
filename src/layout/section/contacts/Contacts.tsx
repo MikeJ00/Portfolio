@@ -3,10 +3,10 @@ import styled from "styled-components";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Logo} from "../../../components/logo/Logo";
 import {Button} from "../../../components/Button";
-import gmail from "../../../assets/images/gmail.png"
-import telegram from "../../../assets/images/telegram.png"
-import githubWhite from "../../../assets/images/gihubWhite.png"
-import linkedIn from "../../../assets/images/linkedIn.png"
+import gmail from "../../../assets/images/gmail.svg"
+import telegram from "../../../assets/images/telegram.svg"
+import github from "../../../assets/images/github.svg"
+import linkedIn from "../../../assets/images/linkedIn.svg"
 
 export const Contacts = () => {
   return (
@@ -17,7 +17,7 @@ export const Contacts = () => {
           <MainTitle>Satisfied with me?
             Please contact me</MainTitle>
           <Image src={telegram}/>
-          <Image src={githubWhite}/>
+          <Image src={github}/>
           <Image src={gmail}/>
           <Image src={linkedIn}/>
         </StyledText>
