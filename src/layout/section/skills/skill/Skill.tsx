@@ -22,7 +22,9 @@ export const Skill = (props:SkillPropsType) => {
   );
 };
 const StyledSkill = styled.div`
-  width: 30%;
+  width: 342px;
+  height: 338px;
+  padding: 0px 22px 0px;
   border: 3px solid black;
   border-radius: 5%;
   margin: 5px;
