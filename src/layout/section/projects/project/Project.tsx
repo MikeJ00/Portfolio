@@ -37,14 +37,19 @@ const Image = styled.img`
   height: 172px;
   object-fit: cover;
   opacity: 50%;
+  margin: 16px 0 16px 16px;
 `
 const TitleProject = styled.h3`
 color: rgb(117, 98, 224);
   font-size: large;
+  margin: 16px 0 10px 16px;
 `
 const StyledText = styled.p`
-color: white`
+color: white;
+  margin: 0 0 24px 16px;
+`
 
 const StyledButton = styled.a`
   text-decoration: none;
+  margin: 0 0 0  16px;
 `

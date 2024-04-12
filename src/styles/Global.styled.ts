@@ -39,5 +39,13 @@ export const GlobalStyled = createGlobalStyle`
     background-color: unset;
     border: none;
   }
+  h3{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 500;
+  }
 `
 

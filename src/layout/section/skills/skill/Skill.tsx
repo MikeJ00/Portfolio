@@ -40,13 +40,11 @@ const SkillTitle = styled.h3`
   margin: 8px 0 0;
   color: white;
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
+  
 `
 const SkillText = styled.p`
   margin: 16px 0 0;
   color: white;
   text-align: center;
-  font-size: 17px;
-  font-weight: 500;
+  
 `

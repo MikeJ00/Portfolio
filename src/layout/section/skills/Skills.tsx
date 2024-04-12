@@ -54,7 +54,7 @@ const StyledSkills = styled.section`
 `
 export const SectionTitle = styled.h2`
   color:#C778DD;
-  text-align: center;
+  //text-align: center;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 32px;

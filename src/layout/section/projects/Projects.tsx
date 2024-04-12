@@ -6,10 +6,12 @@ import example_project from '../../../assets/images/example_project.svg'
 import socialNetwork from '../../../../src/assets/images/socialNetwork.jpg'
 import todo from '../../../../src/assets/images/todolist.jpg'
 import cards from '../../../../src/assets/images/cards.jpg'
+import {Container} from "../../../components/Container";
 
 export const Projects = () => {
   return (
     <StyledProjects>
+      <Container>
       <SectionTitle>
         Projects
       </SectionTitle>
@@ -17,7 +19,7 @@ export const Projects = () => {
       <span>I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects</span>
       </StyledText>
-      <FlexContainer justify={"space-around"}>
+      <FlexContainer justify={"space-between"}>
         <Project projectTitle={"Social Network"}
                  projectText={"A live Geolocation app for finding tweets and twitter users around you."}
                  src={socialNetwork}/>
@@ -28,19 +30,22 @@ export const Projects = () => {
                  projectText={"A video streaming app with live Geolocation, for streaming events."}
                  src={cards}/>
       </FlexContainer>
+      </Container>
     </StyledProjects>
   );
 };
 
 const StyledProjects = styled.section`
-  min-height: 100vh;
+  //min-height: 100vh;
   //background-color: #1A1A29;
 `
 export const SectionTitle = styled.h2`
   color: #C778DD;
-  text-align: center;
+  //text-align: center;
+  margin-bottom: 16px;
 `
 const StyledText = styled.div`
   color: #FFFFFF;
-  font-size: large;
+  font-size: 18px;
+  margin-bottom: 36px;
 `
