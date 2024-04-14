@@ -19,15 +19,15 @@ export const Projects = () => {
       <span>I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects</span>
       </StyledText>
-      <FlexContainer justify={"space-between"}>
+      <FlexContainer justify={"space-between"} align={"flex-start"}>
         <Project projectTitle={"Social Network"}
                  projectText={"A live Geolocation app for finding tweets and twitter users around you."}
                  src={socialNetwork}/>
         <Project projectTitle={"Todolist"}
-                 projectText={"A video streaming app with live Geolocation, for streaming events."}
+                 projectText={"A video streaming app with live Geolocation, for streaming evessssssxxxxxxxxxxsssssssssnts ssssssssssss."}
                  src={todo}/>
         <Project projectTitle={"Cards"}
-                 projectText={"A video streaming app with live Geolocation, for streaming events."}
+                 projectText={"A video streaming app with live Geolocation"}
                  src={cards}/>
       </FlexContainer>
       </Container>
@@ -42,7 +42,7 @@ const StyledProjects = styled.section`
 export const SectionTitle = styled.h2`
   color: #C778DD;
   //text-align: center;
-  margin-bottom: 16px;
+  //margin-bottom: 16px;
 `
 const StyledText = styled.div`
   color: #FFFFFF;
