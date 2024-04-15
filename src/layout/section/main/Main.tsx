@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import example_photo from '../../../assets/images/example_photo.png'
+import mainPhoto from '../../../assets/images/shortTop.png'
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Container} from "../../../components/Container";
 
@@ -14,9 +14,9 @@ export const Main = () => {
         <MainTitle>Frontend Developer</MainTitle>
         <Name>Mike Berasneu</Name>
       </div>
-        <PhotoWrapper>
-      <Photo src={example_photo} alt=""/>
-        </PhotoWrapper>
+        {/*<PhotoWrapper>*/}
+      <Photo src={mainPhoto} alt=""/>
+        {/*</PhotoWrapper>*/}
       </FlexContainer>
       </Container>
     </StyledMain>
@@ -53,6 +53,7 @@ const Photo = styled.img`
   width: 444px;
   height: 444px;
   object-fit: cover;
+  border-radius: 150px;
 `
 const MainTitle = styled.h1`
   color: rgb(199, 120, 221);

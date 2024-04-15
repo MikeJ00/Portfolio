@@ -18,10 +18,18 @@ export const Contacts = () => {
             <ConnectText>Connect with me:</ConnectText>
             <MainTitle>Satisfied with me?
               Please contact me</MainTitle>
-            <Image src={telegram}/>
-            <Image src={github}/>
-            <Image src={gmail}/>
-            <Image src={linkedIn}/>
+            <SocialLink>
+              <Image src={telegram}/>
+            </SocialLink>
+            <SocialLink>
+              <Image src={linkedIn}/>
+            </SocialLink>
+            <SocialLink>
+              <Image src={github}/>
+            </SocialLink>
+            <SocialLink>
+              <Image src={gmail}/>
+            </SocialLink>
           </StyledText>
           <StyledContacts>
             <ContactTable>
@@ -47,6 +55,7 @@ const Image = styled.img`
   height: 50px;
   object-fit: cover;
   opacity: 50%;
+  margin-right: 16px;
 `
 const MainStyledContacts = styled.div`
   //background-color: #1A1A29;
@@ -55,6 +64,7 @@ const MainStyledContacts = styled.div`
 `
 const StyledContacts = styled.div`
   //background-color: #1A1A29;
+  margin-right: 60px;
 
 `
 const StyledText = styled.div`
@@ -77,25 +87,47 @@ const StyledForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  
+  gap: 16px;
+
+  textarea {
+    resize: none;
+    font-family: "Poppins";
+    min-height: 98px;
+  }
+
 `
 const Field = styled.input`
   //opacity: 11%;
-  min-height: 2px;
-  padding-bottom: 16px;
+  //font-family: "Popins";
+  min-height: 62px;
+  //padding-bottom: 16px;
   color: rgb(245, 245, 245);
   background: rgb(245, 245, 245, 0.1);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  //border-radius: 5%;
-  ::placeholder {
+  border-radius: 8px;
+
+  &::placeholder {
     font-weight: bolder;
     opacity: 0.5;
     padding-left: 16px;
+    //text-align:center;
     //display: flex;
     //align-content: center;
     text-align: start;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(245, 245, 245, 0.1);
+  }
+`
+
+const SocialLink = styled.a`
+  width: 50px;
+  height: 50px;
+  display: inline;
+  &:hover{
+    opacity: 0.7;
   }
 `

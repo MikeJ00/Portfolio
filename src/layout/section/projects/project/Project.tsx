@@ -32,6 +32,7 @@ const StyledProject = styled.div`
   //opacity: 50%;
   width: 100%;
   max-width: 340px;
+  min-height: 420px;
   border-radius: 8px;
   background: rgb(49, 49, 63);
   
@@ -46,12 +47,12 @@ const Image = styled.img`
 const TitleProject = styled.h3`
 color: rgb(117, 98, 224);
   font-size: large;
-  margin: 16px 0 10px 16px;
+  margin: 0 0 5px 16px;
   background: rgb(49, 49, 63);
 `
 const StyledText = styled.p`
 color: white;
-  margin: 0 0 24px 16px;
+  margin: 0 0 32px 16px;;
   background: rgb(49, 49, 63);
 `
 

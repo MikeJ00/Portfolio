@@ -24,7 +24,11 @@ export const Projects = () => {
                  projectText={"A live Geolocation app for finding tweets and twitter users around you."}
                  src={socialNetwork}/>
         <Project projectTitle={"Todolist"}
-                 projectText={"A video streaming app with live Geolocation, for streaming evessssssxxxxxxxxxxsssssssssnts ssssssssssss."}
+                 projectText={"A video streaming app with live Geolocation, " +
+                   "or streaming evessssssxxxxxxxxxxsssssssssnts ssssssssssss." +
+                   "ing evessssssxxxxxxxxxxsssssssssn" +
+                   "ing evessssssxxxxxxxxxxsssssssssn" +
+                   ""}
                  src={todo}/>
         <Project projectTitle={"Cards"}
                  projectText={"A video streaming app with live Geolocation"}
@@ -42,7 +46,7 @@ const StyledProjects = styled.section`
 export const SectionTitle = styled.h2`
   color: #C778DD;
   //text-align: center;
-  //margin-bottom: 16px;
+  margin-bottom: 16px;
 `
 const StyledText = styled.div`
   color: #FFFFFF;

@@ -14,7 +14,8 @@ export const Footer = () => {
   );
 };
 
-const StyledFooter = styled.footer``
-const Copyright = styled.small`
+const StyledFooter = styled.footer`
+padding: 40px 0`
+const Copyright = styled.h5`
 color: #FFFFFF;
 opacity: 50%`
