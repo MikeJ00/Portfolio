@@ -7,6 +7,7 @@ export const Button = styled.button`
   height: 50px;
   border-radius: 8px;
   font-size: 16px;
+  cursor: pointer;
   // border-radius: 5%;
   // border: 1px solid rgb(117, 98, 224)
 `

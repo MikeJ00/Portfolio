@@ -129,5 +129,6 @@ const SocialLink = styled.a`
   display: inline;
   &:hover{
     opacity: 0.7;
+    cursor: pointer;
   }
 `
