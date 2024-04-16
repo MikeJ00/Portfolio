@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon";
+import {theme} from "../../../../styles/Theme";
 
 
 type ProjectType = {
@@ -29,13 +30,16 @@ export const Project = (props:ProjectType) => {
 };
 
 const StyledProject = styled.div`
+  margin-bottom: 15px;
   //opacity: 50%;
-  width: 100%;
-  max-width: 340px;
+  flex-grow: 1;
+  //width: 330px;
   min-height: 420px;
   border-radius: 8px;
   background: rgb(49, 49, 63);
-  
+  @media ${theme.media.desktop}{
+    max-width: 340px;
+  }
 `
 const Image = styled.img`
   width: 91%;

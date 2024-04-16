@@ -8,12 +8,14 @@ import telegram from "../../../assets/images/telegram.svg"
 import github from "../../../assets/images/github.svg"
 import linkedIn from "../../../assets/images/linkedIn.svg"
 import {Container} from "../../../components/Container";
+import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
 
 export const Contacts = () => {
   return (
     <MainStyledContacts>
       <Container>
-        <FlexContainer align={"first"} justify={"space-between"}>
+        <FlexContainer align={"first"} justify={"space-between"} wrap={"wrap"}>
           <StyledText>
             <ConnectText>Connect with me:</ConnectText>
             <MainTitle>Satisfied with me?
@@ -61,6 +63,11 @@ const MainStyledContacts = styled.div`
   //background-color: #1A1A29;
   //min-height: 100vh;
   padding-bottom: 16px;
+  @media ${theme.media.mobile}{
+    padding: 0 15px 0 15px;
+    //width: 360px;
+    //text-align: center;
+  }
 `
 const StyledContacts = styled.div`
   //background-color: #1A1A29;
@@ -69,8 +76,12 @@ const StyledContacts = styled.div`
 `
 const StyledText = styled.div`
   color: #FFFFFF;
+  @media ${theme.media.mobile}{
+    padding-bottom: 24px;
+  }
 `
 const ConnectText = styled.h2`
+  ${font({weight:600, Fmax:32,Fmin:24})}
   color: #C778DD;
   //margin: 16px;
   padding-bottom: 16px;
@@ -78,10 +89,19 @@ const ConnectText = styled.h2`
 const MainTitle = styled.h4`
   color: #FFFFFF;
   padding-bottom: 24px;
+  font-weight: 500;
 `
 const ContactTable = styled.h3`
+  ${font({weight:500, Fmax:24,Fmin:18})}
   color: white;
-  padding-bottom: 24px;`
+  padding-bottom: 24px;
+  @media ${theme.media.mobile}{
+    display: none;
+  }
+  // @media ${theme.media.tablet}{
+  //   display: none;
+  // }
+`
 
 const StyledForm = styled.form`
   width: 100%;
@@ -93,6 +113,9 @@ const StyledForm = styled.form`
     resize: none;
     font-family: "Poppins";
     min-height: 98px;
+  }
+    @media ${theme.media.mobile}{
+    min-width: 330px;
   }
 
 `

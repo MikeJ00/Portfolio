@@ -4,6 +4,7 @@ import {Skills} from "../../layout/section/skills/Skills";
 import {Container} from "../../components/Container";
 import {FlexContainer} from "../../components/FlexContainer";
 import {HeaderMenu} from "../../../src/layout/header/headerMenu/HeaderMenu";
+import {theme} from "../../styles/Theme";
 
 const items = ['Home', 'Skills', 'Projects', 'Contacts']
 export const Header = () => {
@@ -29,6 +30,9 @@ background-color: #181824;
   z-index: 99999;
   //display: flex;
   //justify-content: space-between;
+  @media ${theme.media.mobile} {
+    padding: 0 15px 0 15px;
+  }
 `
 const MainName = styled.h3`
   color: rgb(117, 98, 224);

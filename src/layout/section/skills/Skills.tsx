@@ -9,6 +9,8 @@ import javascript from "../../../assets/images/javascript.svg"
 import storybook from "../../../assets/images/storybook.svg"
 import git from "../../../assets/images/git.svg"
 import {Container} from "../../../components/Container";
+import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
   return (
@@ -51,12 +53,16 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   background-color: #181824;
+  @media ${theme.media.mobile} {
+    padding: 0 15px 0 15px;
+  }
 `
 export const SectionTitle = styled.h2`
+  ${font({weight:600, Fmax:32,Fmin:24})}
   color:#C778DD;
   //text-align: center;
-  font-size: 32px;
-  font-weight: 600;
+  //font-size: 32px;
+  //font-weight: 600;
   margin-bottom: 32px;
 `
 const Photo = styled.img`

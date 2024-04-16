@@ -27,6 +27,9 @@ const StyledHeaderMenu = styled.nav`
     gap: 30px;
     list-style-type: none;
   }
+  @media ${theme.media.tablet}{
+    display: none;
+  }
 `
 const ListItem = styled.li`
 

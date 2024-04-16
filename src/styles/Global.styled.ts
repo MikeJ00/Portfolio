@@ -24,7 +24,7 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   section {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 
   a {

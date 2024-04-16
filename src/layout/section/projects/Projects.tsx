@@ -7,6 +7,7 @@ import socialNetwork from '../../../../src/assets/images/socialNetwork.jpg'
 import todo from '../../../../src/assets/images/todolist.jpg'
 import cards from '../../../../src/assets/images/cards.jpg'
 import {Container} from "../../../components/Container";
+import {theme} from "../../../../src/styles/Theme";
 
 export const Projects = () => {
   return (
@@ -19,7 +20,7 @@ export const Projects = () => {
       <span>I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects</span>
       </StyledText>
-      <FlexContainer justify={"space-between"} align={"flex-start"}>
+      <FlexContainer justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
         <Project projectTitle={"Social Network"}
                  projectText={"A live Geolocation app for finding tweets and twitter users around you."}
                  src={socialNetwork}/>
@@ -42,6 +43,12 @@ export const Projects = () => {
 const StyledProjects = styled.section`
   //min-height: 100vh;
   //background-color: #1A1A29;
+  ${FlexContainer}{
+    //gap: 30px;
+  }
+  @media ${theme.media.mobile} {
+    padding: 0 15px 0 15px;
+  }
 `
 export const SectionTitle = styled.h2`
   color: #C778DD;
