@@ -29,10 +29,13 @@ const StyledSkill = styled.div`
   width: 342px;
   height: 338px;
   padding: 0 22px 0;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 5%;
   margin: 5px;
   flex-grow: 1;
+  &:nth-child(odd) {
+    border-color: rgb(117, 98, 224);
+  }
   img {
     margin: 60px 0 0 0;
     height: 50px;

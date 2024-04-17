@@ -20,7 +20,7 @@ export const Projects = () => {
       <span>I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects</span>
       </StyledText>
-      <FlexContainer justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
+      <FlexContainer justify={"space-between"} wrap={"wrap"} >
         <Project projectTitle={"Social Network"}
                  projectText={"A live Geolocation app for finding tweets and twitter users around you."}
                  src={socialNetwork}/>
@@ -45,9 +45,10 @@ const StyledProjects = styled.section`
   //background-color: #1A1A29;
   ${FlexContainer}{
     //gap: 30px;
+    gap: 16px;
   }
   @media ${theme.media.mobile} {
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
   }
 `
 export const SectionTitle = styled.h2`

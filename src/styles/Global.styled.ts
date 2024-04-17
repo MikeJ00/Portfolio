@@ -8,11 +8,11 @@ export const GlobalStyled = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(24, 24, 36);
+    //background-color: rgb(24, 24, 36);
   }
 
   body {
-    //background-color: rgb(24, 24, 36);
+    background-color: rgb(24, 24, 36);
     margin: 0;
     font-family: "Poppins", "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

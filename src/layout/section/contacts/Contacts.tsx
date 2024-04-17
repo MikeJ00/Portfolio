@@ -120,9 +120,11 @@ const StyledForm = styled.form`
 
 `
 const Field = styled.input`
+  border: none;
+  padding: 20px 16px;
   //opacity: 11%;
   //font-family: "Popins";
-  min-height: 62px;
+  //min-height: 62px;
   //padding-bottom: 16px;
   color: rgb(245, 245, 245);
   background: rgb(245, 245, 245, 0.1);

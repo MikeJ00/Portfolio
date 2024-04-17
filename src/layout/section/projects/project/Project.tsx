@@ -23,46 +23,64 @@ export const Project = (props:ProjectType) => {
       <StyledText>
         {props.projectText}
       </StyledText>
-      <StyledButton href={"#"}>View Live </StyledButton>
-      <StyledButton href={"#"}>Github Repo</StyledButton>
+      <ButtonsBlock>
+        <StyledButton href={"#"}>View Live </StyledButton>
+        <StyledButton href={"#"}>Github Repo</StyledButton>
+        <StyledButton href={"#"}>Github Repo</StyledButton>
+        <StyledButton href={"#"}>Github Repo</StyledButton>
+        <StyledButton href={"#"}>Github</StyledButton>
+        <StyledButton href={"#"}>Github</StyledButton>
+      </ButtonsBlock>
     </StyledProject>
   );
 };
 
 const StyledProject = styled.div`
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 20px;
+  //margin-bottom: 15px;
   //opacity: 50%;
   flex-grow: 1;
-  //width: 330px;
   min-height: 420px;
   border-radius: 8px;
   background: rgb(49, 49, 63);
-  @media ${theme.media.desktop}{
-    max-width: 340px;
-  }
+  width: 320px;
+  
 `
 const Image = styled.img`
-  width: 91%;
+  width: 100%;
   height: 172px;
   object-fit: cover;
   opacity: 50%;
-  margin: 16px 0 16px 16px;
+  margin-bottom: 16px;
 `
 const TitleProject = styled.h3`
 color: rgb(117, 98, 224);
   font-size: large;
-  margin: 0 0 5px 16px;
+  //margin: 0 0 5px 16px;
+  
   background: rgb(49, 49, 63);
 `
 const StyledText = styled.p`
+  flex-grow: 1;
+  
 color: white;
-  margin: 0 0 32px 16px;;
+  //margin: 0 0 32px 16px;
   background: rgb(49, 49, 63);
+  margin: 5px 0 24px;
 `
-
+const ButtonsBlock = styled.div`
+display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+`
 const StyledButton = styled.a`
+  display: inline-block;
+  white-space: nowrap;
+  
   text-decoration: none;
-  margin: 0 0 0  16px;
+  //margin: 0 0 0  16px;
   background: rgb(49, 49, 63);
   color: white;
   padding: 12px 25px 12px 25px;
