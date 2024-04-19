@@ -24,12 +24,8 @@ export const Project = (props:ProjectType) => {
         {props.projectText}
       </StyledText>
       <ButtonsBlock>
-        <StyledButton href={"#"}>View Live </StyledButton>
+        <StyledButton href={"#"}>View Live</StyledButton>
         <StyledButton href={"#"}>Github Repo</StyledButton>
-        <StyledButton href={"#"}>Github Repo</StyledButton>
-        <StyledButton href={"#"}>Github Repo</StyledButton>
-        <StyledButton href={"#"}>Github</StyledButton>
-        <StyledButton href={"#"}>Github</StyledButton>
       </ButtonsBlock>
     </StyledProject>
   );

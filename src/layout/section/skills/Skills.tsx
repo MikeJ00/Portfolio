@@ -63,7 +63,7 @@ export const SectionTitle = styled.h2`
   //text-align: center;
   //font-size: 32px;
   //font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 `
 const Photo = styled.img`
   width: 75px;

@@ -77,24 +77,25 @@ const StyledContacts = styled.div`
 const StyledText = styled.div`
   color: #FFFFFF;
   @media ${theme.media.mobile}{
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 `
 const ConnectText = styled.h2`
   ${font({weight:600, Fmax:32,Fmin:24})}
   color: #C778DD;
   //margin: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  margin-top: 10px;
 `
 const MainTitle = styled.h4`
   color: #FFFFFF;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   font-weight: 500;
 `
 const ContactTable = styled.h3`
   ${font({weight:500, Fmax:24,Fmin:18})}
   color: white;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   @media ${theme.media.mobile}{
     display: none;
   }

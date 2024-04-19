@@ -7,11 +7,13 @@ import {Projects} from "../src/layout/section/projects/Projects";
 import {Contacts} from "../src/layout/section/contacts/Contacts";
 import {Footer} from "../src/layout/footer/Footer";
 import {AboutMe} from "../src/layout/section/aboutMe/AboutMe";
+import {MobileBurger} from "../src/layout/header/mobileBurger/mobileBurger";
 
 
 function App() {
   return (
     <div className="App">
+      <MobileBurger/>
       <Header/>
       <Main/>
       {/*<AboutMe/>*/}

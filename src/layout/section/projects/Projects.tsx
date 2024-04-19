@@ -55,6 +55,7 @@ export const SectionTitle = styled.h2`
   color: #C778DD;
   //text-align: center;
   margin-bottom: 16px;
+  margin-top:10px
 `
 const StyledText = styled.div`
   color: #FFFFFF;

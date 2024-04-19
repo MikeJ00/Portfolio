@@ -49,6 +49,7 @@ const StyledMain = styled.section`
   display: flex;
   @media ${theme.media.mobile} {
     padding: 0 15px 0 15px;
+    min-height: 80vh;
   }
 `
 const StyledText = styled.div`
