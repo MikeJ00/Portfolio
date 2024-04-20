@@ -13,11 +13,11 @@ const Link = styled.a`
   height: 40px;
   border-radius: 50%;
   //display: inline;
-  color: white;
-  background-color: #1A1A29;
+  color: ${theme.colors.font};
+  background-color: ${theme.colors.primaryBg};
   :hover{
-    color: #1A1A29;
-    background-color: white;
+    color: ${theme.colors.primaryBg};
+    background-color: ${theme.colors.font};
   }
 `
 const SocialListMobile = styled.ul`
