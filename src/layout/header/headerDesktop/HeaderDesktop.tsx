@@ -1,10 +1,10 @@
 import React from 'react';
-import {S} from "../headerMenu/HeaderMenu_Styles";
+import {S} from "../headerDesktop/HeaderDesktop_Styles";
 
 type MenuType = {
   menuItems: Array<string>
 }
-export const HeaderMenu = (props: MenuType) => {
+export const HeaderDesktop = (props: MenuType) => {
   return (
     <S.StyledHeaderMenu>
       <ul>

@@ -24,6 +24,7 @@ const SocialListMobile = styled.ul`
   gap: 35px;
   display: flex;
 `
+
 const StyledHeaderMenu = styled.div`
   display: none;
   @media ${theme.media.tablet} {
