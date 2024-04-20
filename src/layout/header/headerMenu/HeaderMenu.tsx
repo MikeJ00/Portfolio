@@ -1,45 +1,20 @@
 import React from 'react';
-import styled from "styled-components";
-import {theme} from "../../../../src/styles/Theme";
+import {S} from "../headerMenu/HeaderMenu_Styles";
 
 type MenuType = {
   menuItems: Array<string>
 }
 export const HeaderMenu = (props: MenuType) => {
   return (
-    <StyledHeaderMenu>
+    <S.StyledHeaderMenu>
       <ul>
         {props.menuItems.map((el,index) => {
-          return <ListItem key={index}>
-            <Link href={""}>{el}</Link>
-          </ListItem>
+          return <S.ListItem key={index}>
+            <S.Link href={""}>{el}</S.Link>
+          </S.ListItem>
         })}
       </ul>
-    </StyledHeaderMenu>
+    </S.StyledHeaderMenu>
   );
 };
 
-const StyledHeaderMenu = styled.nav`
-  //margin-right: 160px;
-  //font-weight: bolder;
-  ul {
-    display: flex;
-    gap: 30px;
-    list-style-type: none;
-  }
-  @media ${theme.media.tablet}{
-    display: none;
-  }
-`
-const ListItem = styled.li`
-
-`
-const Link = styled.a`
-  color: ${theme.colors.font};
-  font-size: 18px;
-  font-weight: 600;
-  text-align: left;
-  &:hover{
-    color: ${theme.colors.accent};
-  }
-`

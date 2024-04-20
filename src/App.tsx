@@ -6,17 +6,16 @@ import {Skills} from "../src/layout/section/skills/Skills";
 import {Projects} from "../src/layout/section/projects/Projects";
 import {Contacts} from "../src/layout/section/contacts/Contacts";
 import {Footer} from "../src/layout/footer/Footer";
-import {AboutMe} from "../src/layout/section/aboutMe/AboutMe";
-import {MobileBurger} from "../src/layout/header/mobileBurger/mobileBurger";
+import {MobileVersion} from "../src/layout/header/mobileVersion/mobileVersion";
+
 
 
 function App() {
   return (
     <div className="App">
-      <MobileBurger/>
+      <MobileVersion/>
       <Header/>
       <Main/>
-      {/*<AboutMe/>*/}
       <Skills/>
       <Projects/>
       <Contacts/>
