@@ -3,6 +3,7 @@ export const theme = {
         primaryBg: '#1A1A29',
         secondaryBg: '#181824',
         accent: '#7562E0',
+        purple: '#C778DD',
         font: '#FFFFFF'
     },
     media: {

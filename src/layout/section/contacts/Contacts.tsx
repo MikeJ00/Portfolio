@@ -1,160 +1,62 @@
 import React from 'react';
-import styled from "styled-components";
 import {FlexContainer} from "../../../components/FlexContainer";
-import {Logo} from "../../../components/logo/Logo";
 import {Button} from "../../../components/Button";
-import gmail from "../../../assets/images/gmail.svg"
-import telegram from "../../../assets/images/telegram.svg"
-import github from "../../../assets/images/github.svg"
-import linkedIn from "../../../assets/images/linkedIn.svg"
 import {Container} from "../../../components/Container";
-import {font} from "../../../styles/Common";
-import {theme} from "../../../styles/Theme";
+import {S} from "../contacts/Contacts_Styles";
+import {Icon} from "../../../components/icon/Icon";
 
-export const Contacts = () => {
-  return (
-    <MainStyledContacts>
-      <Container>
-        <FlexContainer align={"first"} justify={"space-between"} wrap={"wrap"}>
-          <StyledText>
-            <ConnectText>Connect with me:</ConnectText>
-            <MainTitle>Satisfied with me?
-              Please contact me</MainTitle>
-            <SocialLink>
-              <Image src={telegram}/>
-            </SocialLink>
-            <SocialLink>
-              <Image src={linkedIn}/>
-            </SocialLink>
-            <SocialLink>
-              <Image src={github}/>
-            </SocialLink>
-            <SocialLink>
-              <Image src={gmail}/>
-            </SocialLink>
-          </StyledText>
-          <StyledContacts>
-            <ContactTable>
-              Contact me, let’s make magic together
-            </ContactTable>
-            <StyledForm>
-              <Field placeholder={"Name"}/>
-              <Field placeholder={"Email"}/>
-              <Field placeholder={"Message"} as={"textarea"}/>
-              <Button type={"submit"}>
-                Send
-              </Button>
-            </StyledForm>
-          </StyledContacts>
-        </FlexContainer>
-      </Container>
-    </MainStyledContacts>
+const ContactsItemsData = [
+    {
+        iconId: "telegram",
+    },
+    {
+        iconId: "linkedIn",
+    },
+    {
+        iconId: "github",
+    },
+    {
+        iconId: "gmail",
+    },]
+export const Contacts: React.FC = () => {
+    return (
+        <S.MainStyledContacts>
+            <Container>
+                <FlexContainer align={"first"} justify={"space-between"} wrap={"wrap"}>
+                    <S.StyledText>
+                        <S.ConnectText>Connect with me:</S.ConnectText>
+                        <S.MainTitle>Satisfied with me?
+                            Please contact me</S.MainTitle>
+                        {ContactsItemsData.map((el, index) => {
+                            return (
+                                <S.SocialLink>
+                                    <Icon
+                                        key={index}
+                                        width={"50"}
+                                        height={"50"}
+                                        viewBox={"0 0 50 50"}
+                                        iconId={el.iconId}
+                                        opacity={"50%"}/>
+                                </S.SocialLink>
+                            )
+                        })}
+                    </S.StyledText>
+                    <S.StyledContacts>
+                        <S.ContactTable>
+                            Contact me, let’s make magic together
+                        </S.ContactTable>
+                        <S.StyledForm>
+                            <S.Field placeholder={"Name"}/>
+                            <S.Field placeholder={"Email"}/>
+                            <S.Field placeholder={"Message"} as={"textarea"}/>
+                            <Button type={"submit"}>
+                                Send
+                            </Button>
+                        </S.StyledForm>
+                    </S.StyledContacts>
+                </FlexContainer>
+            </Container>
+        </S.MainStyledContacts>
 
-  );
+    );
 };
-const Image = styled.img`
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  opacity: 50%;
-  margin-right: 16px;
-`
-const MainStyledContacts = styled.div`
-  //background-color: #1A1A29;
-  //min-height: 100vh;
-  padding-bottom: 16px;
-  @media ${theme.media.mobile}{
-    padding: 0 15px 0 15px;
-    //width: 360px;
-    //text-align: center;
-  }
-`
-const StyledContacts = styled.div`
-  //background-color: #1A1A29;
-  margin-right: 60px;
-
-`
-const StyledText = styled.div`
-  color: #FFFFFF;
-  @media ${theme.media.mobile}{
-    margin-bottom: 24px;
-  }
-`
-const ConnectText = styled.h2`
-  ${font({weight:600, Fmax:32,Fmin:24})}
-  color: #C778DD;
-  //margin: 16px;
-  margin-bottom: 16px;
-  margin-top: 10px;
-`
-const MainTitle = styled.h4`
-  color: #FFFFFF;
-  margin-bottom: 24px;
-  font-weight: 500;
-`
-const ContactTable = styled.h3`
-  ${font({weight:500, Fmax:24,Fmin:18})}
-  color: white;
-  margin-bottom: 24px;
-  @media ${theme.media.mobile}{
-    display: none;
-  }
-  // @media ${theme.media.tablet}{
-  //   display: none;
-  // }
-`
-
-const StyledForm = styled.form`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  textarea {
-    resize: none;
-    font-family: "Poppins";
-    min-height: 98px;
-  }
-    @media ${theme.media.mobile}{
-    min-width: 330px;
-  }
-
-`
-const Field = styled.input`
-  border: none;
-  padding: 20px 16px;
-  //opacity: 11%;
-  //font-family: "Popins";
-  //min-height: 62px;
-  //padding-bottom: 16px;
-  color: rgb(245, 245, 245);
-  background: rgb(245, 245, 245, 0.1);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  border-radius: 8px;
-
-  &::placeholder {
-    font-weight: bolder;
-    opacity: 0.5;
-    padding-left: 16px;
-    //text-align:center;
-    //display: flex;
-    //align-content: center;
-    text-align: start;
-  }
-
-  &:focus-visible {
-    outline: 2px solid rgb(245, 245, 245, 0.1);
-  }
-`
-
-const SocialLink = styled.a`
-  width: 50px;
-  height: 50px;
-  display: inline;
-  &:hover{
-    opacity: 0.7;
-    cursor: pointer;
-  }
-`

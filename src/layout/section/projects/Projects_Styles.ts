@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {FlexContainer} from "../../../components/FlexContainer";
-import {theme} from "../../../styles";
+import {font, theme} from "../../../styles";
 
 
 const StyledProjects = styled.section`
@@ -13,7 +13,8 @@ const StyledProjects = styled.section`
   }
 `
 const SectionTitle = styled.h2`
-  color: ${theme.colors.accent};
+  ${font({weight: 600, Fmax: 32, Fmin: 24})};
+  color: ${theme.colors.purple};
   margin-bottom: 16px;
   margin-top: 10px
 `

@@ -9,8 +9,8 @@ const StyledSkills = styled.section`
   }
 `
 const SectionTitle = styled.h2`
-  ${font({weight: 600, Fmax: 32, Fmin: 24})}
-  color: ${theme.colors.accent}
+  ${font({weight: 600, Fmax: 32, Fmin: 24})};
+  color: ${theme.colors.purple};
   margin-bottom: 16px;
 `
 const Photo = styled.img`

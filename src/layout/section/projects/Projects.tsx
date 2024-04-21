@@ -30,7 +30,7 @@ const workData = [
         src: socialNetwork,
     },
 ]
-export const Projects = () => {
+export const Projects: React.FC = () => {
     return (
         <S.StyledProjects>
             <Container>
@@ -42,8 +42,9 @@ export const Projects = () => {
         here are a few of my live, real-world projects</span>
                 </S.StyledText>
                 <FlexContainer justify={"space-between"} wrap={"wrap"}>
-                    {workData.map((el) =>
-                        <Project projectTitle={el.projectTitle}
+                    {workData.map((el, index) =>
+                        <Project key={index}
+                                 projectTitle={el.projectTitle}
                                  projectText={el.projectText}
                                  src={el.src}/>)}
                 </FlexContainer>
