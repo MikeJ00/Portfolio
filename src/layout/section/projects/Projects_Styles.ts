@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {FlexContainer} from "../../../components/FlexContainer";
-import {font, theme} from "../../../styles";
+import {FlexContainer} from "components/FlexContainer";
+import {font, theme} from "styles";
 
 
 const StyledProjects = styled.section`

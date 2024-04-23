@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import {theme} from "../../../styles/Theme";
+import {theme} from "styles";
+import {Link} from "react-scroll";
 // import {theme} from "styles";
 
 const StyledHeaderMenu = styled.nav`
@@ -15,17 +16,17 @@ const StyledHeaderMenu = styled.nav`
 const ListItem = styled.li`
 
 `
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: ${theme.colors.font};
   font-size: 18px;
   font-weight: 600;
   text-align: left;
-  &:hover{
+  &:hover, &.active{
     color: ${theme.colors.accent};
   }
 `
 export const S = {
   StyledHeaderMenu,
-  Link,
+  NavLink,
   ListItem
 }

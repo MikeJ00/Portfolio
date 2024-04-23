@@ -1,20 +1,40 @@
 import React from 'react';
 import {S} from "../headerDesktop/HeaderDesktop_Styles";
 
-type MenuType = {
-  menuItems: Array<string>
-}
-export const HeaderDesktop = (props: MenuType) => {
-  return (
-    <S.StyledHeaderMenu>
-      <ul>
-        {props.menuItems.map((el,index) => {
-          return <S.ListItem key={index}>
-            <S.Link href={""}>{el}</S.Link>
-          </S.ListItem>
-        })}
-      </ul>
-    </S.StyledHeaderMenu>
-  );
+// const items = ['Home', 'Skills', 'Projects', 'Contacts']
+const items = [
+    {
+        title: "Home",
+        href: "home",
+    },
+    {
+        title: "Skills",
+        href: "skills",
+    },
+    {
+        title: "Projects",
+        href: "projects",
+    },
+    {
+        title: "Contacts",
+        href: "contacts",
+    }]
+export const HeaderDesktop = () => {
+    return (
+        <S.StyledHeaderMenu>
+            <ul>
+                {items.map((el, index) => {
+                    return <S.ListItem key={index}>
+                        <S.NavLink activeClass={"active"}
+                                   to={el.href}
+                                   smooth={true}
+                                   // spy={true}
+                            // href={`#${el.href}`}
+                        >{el.title}</S.NavLink>
+                    </S.ListItem>
+                })}
+            </ul>
+        </S.StyledHeaderMenu>
+    );
 };
 

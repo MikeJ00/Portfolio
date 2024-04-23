@@ -1,4 +1,4 @@
-import {theme} from "../../src/styles/Theme";
+import {theme} from "styles/Theme";
 
 type FontType = {
   family?: string

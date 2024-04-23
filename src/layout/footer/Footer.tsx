@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexContainer} from "../../components/FlexContainer";
-import {theme} from "../../styles";
+import {FlexContainer} from "components/FlexContainer";
+import {theme} from "styles";
 
 export const Footer: React.FC = () => {
     return (
@@ -16,7 +16,8 @@ export const Footer: React.FC = () => {
 };
 
 const StyledFooter = styled.footer`
-  padding: 40px 0`
+  //margin-top: 20px
+`
 const Copyright = styled.h5`
   color: ${theme.colors.font};
   opacity: 50%`

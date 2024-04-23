@@ -1,17 +1,17 @@
 import React from 'react';
-import {Container} from "../../components/Container";
-import {FlexContainer} from "../../components/FlexContainer";
+import {Container} from "components/Container";
+import {FlexContainer} from "components/FlexContainer";
 import {HeaderDesktop} from "../header/headerDesktop/HeaderDesktop";
 import {S} from "../header/Header_Styles";
 
-const items = ['Home', 'Skills', 'Projects', 'Contacts']
+
 export const Header:React.FC = () => {
     return (
-        <S.StyledHeader>
+        <S.StyledHeader >
           <Container>
             <FlexContainer justify={"space-between"} align={"center"}>
-              <S.MainName>Mike Berasneu</S.MainName>
-              <HeaderDesktop menuItems={items}/>
+              <S.MainName>MikeJ0</S.MainName>
+              <HeaderDesktop/>
             </FlexContainer>
           </Container>
         </S.StyledHeader>

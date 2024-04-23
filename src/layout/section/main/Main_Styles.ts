@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {font, theme} from "../../../styles";
+import {font, theme} from "styles";
 
 const PhotoWrapper = styled.div`
   position: relative;
@@ -39,10 +39,17 @@ const Photo = styled.img`
   }
 `
 const MainTitle = styled.h1`
-  ${font({family:"Poppins", weight:600, Fmax:52, Fmin:36})};
+  ${font({family: "Poppins", weight: 600, Fmax: 52, Fmin: 36})};
   color: ${theme.colors.purple};
-  line-height: 78px;
-  text-align: left;`
+  //line-height: 78px;
+  text-align: left;
+  p {
+    display: none;
+  }
+  // @media ${theme.media.mobile} {
+  //   line-height: normal;
+  // }
+`
 
 const Greetings = styled.h2`
   ${font({family:"Poppins", weight:600, Fmax:32, Fmin:20})};
