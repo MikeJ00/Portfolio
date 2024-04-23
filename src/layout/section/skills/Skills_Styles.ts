@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import {font} from "../../../styles/Common";
-import {theme} from "../../../styles/Theme";
+import {font, theme} from "styles";
 
 const StyledSkills = styled.section`
   background-color: ${theme.colors.secondaryBg};
@@ -12,11 +11,6 @@ const SectionTitle = styled.h2`
   ${font({weight: 600, Fmax: 32, Fmin: 24})};
   color: ${theme.colors.purple};
   margin-bottom: 16px;
-`
-const Photo = styled.img`
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
 `
 const StyledSkill = styled.div`
   width: 342px;
@@ -32,6 +26,7 @@ const StyledSkill = styled.div`
   img {
     margin: 60px 0 0 0;
     height: 50px;
+    opacity: 0.8;
   }
 `
 const SkillTitle = styled.h3`
@@ -48,7 +43,6 @@ const SkillText = styled.p`
   text-align: center;
 `
 export const S = {
-    Photo,
     SectionTitle,
     StyledSkills,
     StyledSkill,

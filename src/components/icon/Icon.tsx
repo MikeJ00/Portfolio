@@ -7,6 +7,7 @@ type IconPropType = {
     height?: string
     viewBox?: string
     opacity?: string
+    href?: string
 }
 export const Icon: React.FC<IconPropType> = (props: IconPropType) => {
     return (

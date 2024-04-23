@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlexContainer} from "../../../../components/FlexContainer";
+import {FlexContainer} from "components/FlexContainer";
 import {S} from "../../skills/Skills_Styles";
 
 type SkillPropsType = {
