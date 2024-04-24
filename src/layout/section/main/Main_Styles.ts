@@ -20,7 +20,7 @@ const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
   @media ${theme.media.mobile} {
-    padding: 0 15px 0 15px;
+    //padding: 0 15px 0 15px;
     min-height: 80vh;
   }
 `

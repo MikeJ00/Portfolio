@@ -28,8 +28,8 @@ export const HeaderDesktop = () => {
                         <S.NavLink activeClass={"active"}
                                    to={el.href}
                                    smooth={true}
-                                   // spy={true}
-                            // href={`#${el.href}`}
+                                   spy={true}
+                                   offset={1}
                         >{el.title}</S.NavLink>
                     </S.ListItem>
                 })}

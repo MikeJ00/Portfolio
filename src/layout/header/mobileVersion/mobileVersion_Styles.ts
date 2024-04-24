@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import {theme} from "../../../../src/styles/Theme";
+import {theme} from "styles";
+import {Link} from "react-scroll";
 
 const SocialItem = styled.li`
   width: 40px;
   height: 40px;
 `
-const Link = styled.a`
+const NavLink = styled(Link)`
   justify-content: center;
   align-items: center;
   display: flex;
@@ -15,7 +16,12 @@ const Link = styled.a`
   //display: inline;
   color: ${theme.colors.font};
   background-color: ${theme.colors.primaryBg};
-  :hover{
+  // :hover{
+  //   color: ${theme.colors.primaryBg};
+  //   background-color: ${theme.colors.font};
+  // }
+  &:hover, &.active{
+    //color: ${theme.colors.accent};
     color: ${theme.colors.primaryBg};
     background-color: ${theme.colors.font};
   }
@@ -28,6 +34,7 @@ const SocialListMobile = styled.ul`
 const StyledHeaderMenu = styled.div`
   display: none;
   @media ${theme.media.tablet} {
+    z-index:999999;
     height: 80px;
     display: flex;
     position: fixed;
@@ -46,7 +53,7 @@ const StyledHeaderMenu = styled.div`
 `
 export const S = {
     SocialItem,
-    Link,
+    NavLink,
     SocialListMobile,
     StyledHeaderMenu
 }

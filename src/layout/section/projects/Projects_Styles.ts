@@ -7,10 +7,6 @@ const StyledProjects = styled.section`
   ${FlexContainer} {
     gap: 16px;
   }
-
-  @media ${theme.media.mobile} {
-    padding: 0 15px;
-  }
 `
 const SectionTitle = styled.h2`
   ${font({weight: 600, Fmax: 32, Fmin: 24})};
@@ -20,17 +16,18 @@ const SectionTitle = styled.h2`
     margin-top: 10px;
   }
 `
-const StyledText = styled.div`
+const StyledText = styled.p`
   color: ${theme.colors.font};
   font-size: 18px;
   margin-bottom: 36px;
+  flex-grow: 1;
 `
 const StyledProject = styled.div`
   display: flex;
   flex-direction: column;
   padding: 16px 16px 20px;
   flex-grow: 1;
-  min-height: 420px;
+  //min-height: 420px;
   border-radius: 8px;
   background: rgb(49, 49, 63);
   width: 320px;
@@ -46,7 +43,7 @@ const Image = styled.img`
 const TitleProject = styled.h3`
   color: rgb(117, 98, 224);
   font-size: large;
-
+  margin-bottom: 4px;
   background: rgb(49, 49, 63);
 `
 const StyledTextProject = styled.p`

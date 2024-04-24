@@ -6,24 +6,51 @@ export const ExampleComp = () => {
     return (
         <>
             <S.SocialItem>
-                <S.Link href={`#${"home"}`}>
+                <S.NavLink activeClass={"active"}
+                           to={"home"}
+                           smooth={true}
+                           spy={true}
+                           offset={0}
+                    // href={`#${"home"}`}
+                >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"mobileHome"}/>
-                </S.Link>
+                </S.NavLink>
             </S.SocialItem>
             <S.SocialItem>
-                <S.Link href={`#${"skills"}`}>
+                <S.NavLink
+                    activeClass={"active"}
+                    to={"skills"}
+                    smooth={true}
+                    spy={true}
+                    offset={0}
+                    // href={`#${"skills"}`}
+                >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"mobileSkills"}/>
-                </S.Link>
+                </S.NavLink>
             </S.SocialItem>
             <S.SocialItem>
-                <S.Link href={`#${"projects"}`}>
+                <S.NavLink
+                    activeClass={"active"}
+                    to={"projects"}
+                    smooth={true}
+                    spy={true}
+                    offset={0}
+                    // href={`#${"projects"}`}
+                >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"portfolio"}/>
-                </S.Link>
+                </S.NavLink>
             </S.SocialItem>
             <S.SocialItem>
-                <S.Link href={`#${"contacts"}`}>
+                <S.NavLink
+                    activeClass={"active"}
+                    to={"contacts"}
+                    smooth={true}
+                    spy={true}
+                    offset={0}
+                    // href={`#${"contacts"}`}
+                >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"contacts"}/>
-                </S.Link>
+                </S.NavLink>
             </S.SocialItem>
         </>
     );

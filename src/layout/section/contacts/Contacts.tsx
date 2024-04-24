@@ -50,7 +50,7 @@ export const Contacts: React.FC = () => {
             <Container>
                 <FlexContainer align={"first"} justify={"space-between"} wrap={"wrap"}>
                     <S.StyledText>
-                        <S.ConnectText>Connect with me:</S.ConnectText>
+                        <S.ConnectText>Connect with me</S.ConnectText>
                         <S.MainTitle>Satisfied with me?
                             Please contact me</S.MainTitle>
                         {ContactsItemsData.map((el, index) => {

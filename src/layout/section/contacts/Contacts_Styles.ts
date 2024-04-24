@@ -8,13 +8,10 @@ const Image = styled.img`
   opacity: 50%;
   margin-right: 16px;
 `
-const MainStyledContacts = styled.div`
-  padding-bottom: 16px;
-  @media ${theme.media.mobile}{
-    padding: 0 15px 0 15px;
-  }
+const MainStyledContacts = styled.section`
+
 `
-const StyledContacts = styled.div`
+const StyledContacts = styled.form`
   margin-right: 60px;
 
 `

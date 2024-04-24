@@ -21,10 +21,12 @@ export const GlobalStyled = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.font}
     line-height: 1.2;
+    min-width: 380px;
   }
 
   section {
     padding: 80px 0;
+    
   }
 
   a {
