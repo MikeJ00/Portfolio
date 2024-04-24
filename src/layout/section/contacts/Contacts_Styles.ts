@@ -28,6 +28,9 @@ const ConnectText = styled.h2`
   ${font({weight:600, Fmax:32,Fmin:24})}
   color: ${theme.colors.purple};
   margin-bottom: 16px;
+  @media ${theme.media.mobile}{
+    margin-top: 10px;
+  }
 `
 const MainTitle = styled.h4`
   color: ${theme.colors.font};

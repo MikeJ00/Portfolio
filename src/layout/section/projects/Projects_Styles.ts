@@ -16,7 +16,9 @@ const SectionTitle = styled.h2`
   ${font({weight: 600, Fmax: 32, Fmin: 24})};
   color: ${theme.colors.purple};
   margin-bottom: 16px;
-  margin-top: 10px
+  @media ${theme.media.mobile}{
+    margin-top: 10px;
+  }
 `
 const StyledText = styled.div`
   color: ${theme.colors.font};

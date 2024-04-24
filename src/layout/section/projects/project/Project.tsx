@@ -5,6 +5,8 @@ type ProjectType = {
     projectTitle: string
     projectText: string
     src: string
+    repoLink:string
+    demoLink:string
 }
 export const Project = (props: ProjectType) => {
     return (
@@ -17,8 +19,8 @@ export const Project = (props: ProjectType) => {
                 {props.projectText}
             </S.StyledText>
             <S.ButtonsBlock>
-                <S.StyledButton href={"#"}>View Live</S.StyledButton>
-                <S.StyledButton href={"#"}>Github Repo</S.StyledButton>
+                <S.StyledButton href={props.demoLink} target={'_blank'}>View Live</S.StyledButton>
+                <S.StyledButton href={props.repoLink} target={'_blank'}>Github Repo</S.StyledButton>
             </S.ButtonsBlock>
         </S.StyledProject>
     );

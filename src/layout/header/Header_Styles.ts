@@ -18,6 +18,9 @@ background-color: #181824;
 `
 const MainName = styled.h3`
   color: rgb(117, 98, 224);
+  @media ${theme.media.mobile} {
+    display:none;
+  }
 `
 
 export const S = {

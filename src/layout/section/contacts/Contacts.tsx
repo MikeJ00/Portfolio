@@ -55,7 +55,7 @@ export const Contacts: React.FC = () => {
                             Please contact me</S.MainTitle>
                         {ContactsItemsData.map((el, index) => {
                             return (
-                                <S.SocialLink target={"_blank"} href={el.href}>
+                                <S.SocialLink key={index} target={"_blank"} href={el.href}>
                                     <Icon
                                         key={index}
                                         width={"50"}
