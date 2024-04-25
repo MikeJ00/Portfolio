@@ -75,15 +75,18 @@ export const Skills: React.FC = () => {
             <Container>
                 <S.SectionTitle>Skills</S.SectionTitle>
                 <FlexContainer wrap={"wrap"} justify={"space-between"}>
-                    {/*<Fade cascade={true}*/}
-                    {/*damping={0.3}>*/}
+                    <Fade childClassName={"wwww"} cascade={true}
+                    damping={0.3}>
                     {SkillData.map((el, index) => {
                         return <Skill key={index}
                                       iconId={el.iconId}
                                       skillTitle={el.skillTitle}
-                                      description={el.description}/>
+                                      description={el.description}
+                                      // isOdd={index % 2 === 0 ? "1" : "0"}
+                                      isOdd={index % 2 === 0}
+                        />
                     })}
-                    {/*</Fade>*/}
+                    </Fade>
                 </FlexContainer>
             </Container>
         </S.StyledSkills>

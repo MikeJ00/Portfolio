@@ -43,6 +43,7 @@ const MainTitle = styled.h1`
   color: ${theme.colors.purple};
   //line-height: 78px;
   text-align: left;
+  
   p {
     display: none;
   }
