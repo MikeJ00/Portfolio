@@ -29,7 +29,6 @@ export const Main: React.FC = () => {
                                         loop: true,
                                         deleteSpeed: 250,
                                         delay: 300,
-                                        wrapperClassName: "WWWW"
                                     }}
                                 />
                             </MediaQuery>

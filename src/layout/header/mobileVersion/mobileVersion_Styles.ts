@@ -20,7 +20,8 @@ const NavLink = styled(Link)`
   //   color: ${theme.colors.primaryBg};
   //   background-color: ${theme.colors.font};
   // }
-  &:hover, &.active{
+  &:hover, 
+  &.active{
     //color: ${theme.colors.accent};
     color: ${theme.colors.primaryBg};
     background-color: ${theme.colors.font};

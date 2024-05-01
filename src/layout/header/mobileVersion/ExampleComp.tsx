@@ -1,6 +1,6 @@
 import React from 'react';
 import {S} from "../mobileVersion/mobileVersion_Styles";
-import {Icon} from "../../../components/icon/Icon";
+import {Icon} from "components/icon/Icon";
 
 export const ExampleComp = () => {
     return (
@@ -22,7 +22,7 @@ export const ExampleComp = () => {
                     to={"skills"}
                     smooth={true}
                     spy={true}
-                    offset={0}
+                    offset={8}
                     // href={`#${"skills"}`}
                 >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"mobileSkills"}/>
@@ -34,7 +34,7 @@ export const ExampleComp = () => {
                     to={"projects"}
                     smooth={true}
                     spy={true}
-                    offset={0}
+                    offset={8}
                     // href={`#${"projects"}`}
                 >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"portfolio"}/>
@@ -46,7 +46,7 @@ export const ExampleComp = () => {
                     to={"contacts"}
                     smooth={true}
                     spy={true}
-                    offset={0}
+                    offset={8}
                     // href={`#${"contacts"}`}
                 >
                     <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"contacts"}/>
