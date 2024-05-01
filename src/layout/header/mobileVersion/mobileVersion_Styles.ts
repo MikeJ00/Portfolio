@@ -16,11 +16,11 @@ const NavLink = styled(Link)`
   //display: inline;
   color: ${theme.colors.font};
   background-color: ${theme.colors.primaryBg};
-  // :hover{
-  //   color: ${theme.colors.primaryBg};
-  //   background-color: ${theme.colors.font};
-  // }
-  &:hover, 
+   //:hover{
+   //  color: ${theme.colors.primaryBg};
+   //  background-color: ${theme.colors.font};
+   //}
+  //&:hover, 
   &.active{
     //color: ${theme.colors.accent};
     color: ${theme.colors.primaryBg};

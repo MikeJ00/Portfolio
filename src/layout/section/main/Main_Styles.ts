@@ -40,6 +40,7 @@ const Photo = styled.img`
 `
 const MainTitle = styled.h1`
   ${font({family: "Poppins", weight: 600, Fmax: 52, Fmin: 36})};
+  //font-size: clamp(36px,calc( (100vw - 360px)/(1360 - 360) * (52 - 36 ) + 36px),52px);
   color: ${theme.colors.purple};
   //line-height: 78px;
   text-align: left;

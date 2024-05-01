@@ -21,7 +21,8 @@ const NavLink = styled(Link)`
   font-size: 18px;
   font-weight: 600;
   text-align: left;
-  &:hover, &.active{
+  &:hover, 
+  &.active{
     color: ${theme.colors.accent};
   }
 `

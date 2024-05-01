@@ -24,30 +24,33 @@ const SkillTitle = styled.h3`
   // }
 `
 const StyledSkill = styled(Fade)<StyledSkillType>`
-  
-width: 342px;
-height: 338px;
-padding: 0 22px 0;
-border: 3px solid ${theme.colors.font};
-border-radius: 16px;
-margin: 5px;
-flex-grow: 1;
+
+  //width: 342px;
+  height: 100%;
+  //padding: 20px 22px;
+  border: 3px solid ${theme.colors.font};
+  border-radius: 16px;
+  //margin: 5px;
+  flex-grow: 1;
+
   ${props => props.isOdd && css<StyledSkillType>`
-     border-color: ${theme.colors.accent};`
-  }${props => !props.isOdd  && css<StyledSkillType>`
-    ${SkillTitle}{ color: ${theme.colors.accent};}`
+    border-color: ${theme.colors.accent};`
+  }${props => !props.isOdd && css<StyledSkillType>`
+    ${SkillTitle} {
+      color: ${theme.colors.accent};
+    }`
   }
-// &:nth-child(odd) {
-//   //border-color: ${theme.colors.accent};
-// }
-// &:nth-child(even) {
-//   // ${SkillTitle}{ color: ${theme.colors.accent};}
-// }
-img {
-  margin: 60px 0 0 0;
-  height: 50px;
-  opacity: 0.8;
-}
+    // &:nth-child(odd) {
+      //   //border-color: ${theme.colors.accent};
+    // }
+    // &:nth-child(even) {
+      //   // ${SkillTitle}{ color: ${theme.colors.accent};}
+    // }
+  img {
+    margin: 60px 0 0 0;
+    height: 50px;
+    opacity: 0.8;
+  }
 `
 
 const SkillText = styled.p`

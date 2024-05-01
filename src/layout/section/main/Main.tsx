@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import mainPhoto from '../../../assets/images/shortTop.png'
 import {FlexContainer} from "components/FlexContainer";
 import {Container} from "components/Container";
@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 import MediaQuery, {useMediaQuery} from 'react-responsive'
 
 export const Main: React.FC = () => {
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+
 
     return (
         <S.StyledMain id={"home"}>

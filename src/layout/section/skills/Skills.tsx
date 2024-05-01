@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FlexContainer} from "components/FlexContainer";
 import {Skill} from "layout/section/skills/skill/Skill";
 import react from "../../../assets/images/react.svg"
@@ -12,7 +12,10 @@ import jest from "../../../assets/images/jest.svg"
 import axios from "../../../assets/images/axios.svg"
 import {Container} from "components/Container";
 import {S} from "../skills/Skills_Styles";
-import {Fade} from "react-awesome-reveal";
+// import {Fade} from "react-awesome-reveal";
+import styled from "styled-components";
+import {theme} from "styles";
+import MediaQuery from "react-responsive";
 
 const SkillData = [
     {
@@ -41,9 +44,9 @@ const SkillData = [
     {
         iconId: storybook,
         skillTitle: "Storybook",
-        description:     "Tool allows me and my team to view the interface " +
+        description: "Tool allows me and my team to view the interface " +
             "during the development process in isolation."
-            // "Tool for building UI components and pages in isolation."
+        // "Tool for building UI components and pages in isolation."
     },
     {
         iconId: git,
@@ -70,25 +73,59 @@ const SkillData = [
 
 ]
 export const Skills: React.FC = () => {
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+    const skills = SkillData.map((el, index) => {
+        return <Skill key={index}
+                      iconId={el.iconId}
+                      skillTitle={el.skillTitle}
+                      description={el.description}
+            // isOdd={index % 2 === 0 ? "1" : "0"}
+                      isOdd={index % 2 === 0}
+        />
+    })
     return (
         <S.StyledSkills id={"skills"}>
             <Container>
                 <S.SectionTitle>Skills</S.SectionTitle>
-                <FlexContainer wrap={"wrap"} justify={"space-between"}>
-                    <Fade childClassName={"wwww"} cascade={true}
-                    damping={0.3}>
-                    {SkillData.map((el, index) => {
-                        return <Skill key={index}
-                                      iconId={el.iconId}
-                                      skillTitle={el.skillTitle}
-                                      description={el.description}
-                                      // isOdd={index % 2 === 0 ? "1" : "0"}
-                                      isOdd={index % 2 === 0}
-                        />
-                    })}
-                    </Fade>
-                </FlexContainer>
+                {/*<FlexContainer wrap={"wrap"} justify={"space-between"}>*/}
+                <GridContainer>
+                    <MediaQuery minWidth={0} maxWidth={786}>
+                        {skills}
+                    </MediaQuery>
+                    <MediaQuery minWidth={786}>
+                        {/*<Fade cascade={true} triggerOnce={true} damping={0.3}>*/}
+                            {skills}
+                        {/*</Fade>*/}
+                    </MediaQuery>
+                    {/*{isDesktop*/}
+                    {/*    ? <Fade cascade={true} triggerOnce={true} damping={0.3}>*/}
+                    {/*        {skills}*/}
+                    {/*    </Fade>*/}
+                    {/*    : skills*/}
+                    {/*}*/}
+
+                    {/*<Fade cascade={true}*/}
+                    {/*      triggerOnce={true}*/}
+                    {/*      // direction={isDesktop ? undefined : undefined}*/}
+                    {/*    damping={0.3}>*/}
+
+                    {/*</Fade>*/}
+                </GridContainer>
+                {/*</FlexContainer>*/}
             </Container>
         </S.StyledSkills>
     );
 };
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(340px, auto);
+  gap: 15px;
+  @media ${theme.media.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media ${theme.media.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
+
