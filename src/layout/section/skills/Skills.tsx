@@ -12,10 +12,6 @@ import jest from "../../../assets/images/jest.svg"
 import axios from "../../../assets/images/axios.svg"
 import {Container} from "components/Container";
 import {S} from "../skills/Skills_Styles";
-// import {Fade} from "react-awesome-reveal";
-import styled from "styled-components";
-import {theme} from "styles";
-import MediaQuery from "react-responsive";
 
 const SkillData = [
     {
@@ -73,7 +69,6 @@ const SkillData = [
 
 ]
 export const Skills: React.FC = () => {
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
     const skills = SkillData.map((el, index) => {
         return <Skill key={index}
                       iconId={el.iconId}
@@ -87,45 +82,12 @@ export const Skills: React.FC = () => {
         <S.StyledSkills id={"skills"}>
             <Container>
                 <S.SectionTitle>Skills</S.SectionTitle>
-                {/*<FlexContainer wrap={"wrap"} justify={"space-between"}>*/}
-                <GridContainer>
-                    <MediaQuery minWidth={0} maxWidth={786}>
+                <S.GridContainer>
                         {skills}
-                    </MediaQuery>
-                    <MediaQuery minWidth={786}>
-                        {/*<Fade cascade={true} triggerOnce={true} damping={0.3}>*/}
-                            {skills}
-                        {/*</Fade>*/}
-                    </MediaQuery>
-                    {/*{isDesktop*/}
-                    {/*    ? <Fade cascade={true} triggerOnce={true} damping={0.3}>*/}
-                    {/*        {skills}*/}
-                    {/*    </Fade>*/}
-                    {/*    : skills*/}
-                    {/*}*/}
-
-                    {/*<Fade cascade={true}*/}
-                    {/*      triggerOnce={true}*/}
-                    {/*      // direction={isDesktop ? undefined : undefined}*/}
-                    {/*    damping={0.3}>*/}
-
-                    {/*</Fade>*/}
-                </GridContainer>
-                {/*</FlexContainer>*/}
+                </S.GridContainer>
             </Container>
         </S.StyledSkills>
     );
 };
-const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(340px, auto);
-  gap: 15px;
-  @media ${theme.media.tablet} {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media ${theme.media.mobile} {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`
+
 

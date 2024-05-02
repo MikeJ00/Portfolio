@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../../src/styles/Theme";
+import {Link} from "react-scroll";
 
 const StyledHeader = styled.header`
 background-color: #181824;
@@ -16,8 +17,10 @@ background-color: #181824;
     //padding: 0 15px 0 15px;
   }
 `
-const MainName = styled.h3`
+const MainNameLink = styled(Link)`
   color: rgb(117, 98, 224);
+  font-size: 24px;
+  font-weight: 600;
   // @media ${theme.media.mobile} {
   //   display:none;
   // }
@@ -25,5 +28,5 @@ const MainName = styled.h3`
 
 export const S = {
   StyledHeader,
-  MainName
+  MainNameLink
 }
