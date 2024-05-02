@@ -4,6 +4,7 @@ import {S} from "../../skills/Skills_Styles";
 import styled from "styled-components";
 import MediaQuery from "react-responsive";
 import {Fade} from "react-awesome-reveal";
+import {Icon} from "components/icon/Icon";
 
 type SkillPropsType = {
     iconId: string
@@ -14,7 +15,8 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
     const content = (
         <FlexContainer direction={"column"} align={"center"}>
-            <img src={props.iconId}/>
+            <Icon iconId={props.iconId} opacity={"0.8"}/>
+            {/*<img src={props.iconId}/>*/}
             <S.SkillTitle>
                 {props.skillTitle}
                 <S.SkillText>

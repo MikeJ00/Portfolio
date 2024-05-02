@@ -26,6 +26,7 @@ const SkillTitle = styled.h3`
 const StyledSkillFade = styled(Fade)<StyledSkillType>`
   //width: 342px;
   height: 100%;
+  padding: 50px 20px 0 20px;
   //padding: 20px 22px;
   border: 3px solid ${theme.colors.font};
   border-radius: 16px;
@@ -54,6 +55,7 @@ const StyledSkillFade = styled(Fade)<StyledSkillType>`
 const StyledSkillMobile = styled.div<StyledSkillType>`
       //width: 342px;
   height: 100%;
+  padding: 20px 20px 0 20px;
   //padding: 20px 22px;
   border: 3px solid ${theme.colors.font};
   border-radius: 16px;
