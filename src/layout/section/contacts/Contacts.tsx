@@ -48,7 +48,7 @@ export const Contacts: React.FC = () => {
     return (
         <S.MainStyledContacts id={"contacts"}>
             <Container>
-                <FlexContainer align={"first"} justify={"space-between"} wrap={"wrap"}>
+                <FlexContainer align={"first"} justify={"space-between"}>
                     <S.StyledText>
                         <S.ConnectText>Connect with me</S.ConnectText>
                         <S.MainTitle>Satisfied with me?

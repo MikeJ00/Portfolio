@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {font, theme} from "styles";
+import {FlexContainer} from "components/FlexContainer";
 
 const Image = styled.img`
   width: 50px;
@@ -9,11 +10,19 @@ const Image = styled.img`
   margin-right: 16px;
 `
 const MainStyledContacts = styled.section`
-
+  @media ${theme.media.tablet}{
+${FlexContainer}{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+}
 `
-const StyledContacts = styled.form`
+const StyledContacts = styled.div`
   margin-right: 60px;
-
+  @media ${theme.media.tablet}{
+    width: 100%;
+    margin-right: 0;
+  }
 `
 const StyledText = styled.div`
   color: ${theme.colors.font};
@@ -80,6 +89,9 @@ const Field = styled.input`
 
   &:focus-visible {
     outline: 2px solid rgb(245, 245, 245, 0.1);
+  }
+  @media ${theme.media.tablet}{
+    width: 100%;
   }
 `
 const SocialLink = styled.a`

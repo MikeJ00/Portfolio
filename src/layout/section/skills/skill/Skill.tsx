@@ -34,8 +34,10 @@ export const Skill = (props: SkillPropsType) => {
                 </S.StyledSkillMobile>
             </MediaQuery>
             <MediaQuery minWidth={786}>
-                <S.StyledSkillFade isOdd={props.isOdd}>
+                <S.StyledSkillFade isOdd={props.isOdd} >
+                    <Fade cascade={true} damping={0.5} delay={1}>
                     {content}
+                    </Fade>
                 </S.StyledSkillFade>
             </MediaQuery>
         </>

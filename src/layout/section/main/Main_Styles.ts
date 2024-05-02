@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {font, theme} from "styles";
+import {FlexContainer} from "components/FlexContainer";
 
 const PhotoWrapper = styled.div`
   position: relative;
@@ -19,6 +20,12 @@ const PhotoWrapper = styled.div`
 const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
+  @media ${theme.media.tablet} {
+    ${FlexContainer} {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
   @media ${theme.media.mobile} {
     //padding: 0 15px 0 15px;
     min-height: 80vh;
@@ -32,6 +39,7 @@ const Photo = styled.img`
   height: 444px;
   object-fit: cover;
   border-radius: 150px;
+  margin: 30px 0;
   @media ${theme.media.mobile}{
     width: 310px;
     height: 380px;
